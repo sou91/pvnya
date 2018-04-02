@@ -1,0 +1,20 @@
+<form class="form-signin" ng-controller="View1Ctrl" name="myform">
+
+    <div class="form-label-group">
+      <input type="text" id="inputEmail" class="form-control" placeholder="UserName" required autofocus ng-model="loginObj.userName">
+      <label for="inputEmail">UserName</label>
+    </div>
+
+    <div class="form-label-group">
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required ng-model="loginObj.pwd">
+      <label for="inputPassword">Password</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" ng-click="myform.$valid && openPage()">Sign in</button>
+    <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+  </form>
